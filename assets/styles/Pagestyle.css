@@ -1,0 +1,273 @@
+
+
+body {
+    background-color: #6f6f6f;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 1em;
+}
+
+
+
+
+footer{
+    background-color: #161616;
+    color:#fbfbfb;
+    font-size:.9em;
+    margin-top: 4em;
+    padding:1.11em 0;
+}
+
+
+
+                        /*banner images*/
+
+:root{
+  --nav-ctrl-color: #000;
+  --nav-ctrl-size: 1.25rem; 
+  --nav-ctrl-inner-size: 1rem;
+}
+                        
+.banner-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    padding-bottom: 100%;
+    width: 100%;
+}
+
+.banner-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.hidden {
+   display: none;
+}
+
+
+.nav-dot {
+   align-items: center;
+   border-color: var(--nav-ctrl-color);
+   border-radius: 100%;
+   border-style: solid;
+   border-width: 1px;
+   display: flex;
+   height: var(--nav-ctrl-size);
+   justify-content: center;
+   margin: 0 .25rem;
+   width: var(--nav-ctrl-size);
+}
+.nav-dot-inner {
+   background-color: var(--nav-ctrl-color);
+   border-radius: 100%;
+   display: block;
+   opacity: 0;
+   height: 0;
+   transition: all .2s ease;   /* transittion forms the animation. the opacity, height, and width need to be 0 */
+   width: 0;
+}
+
+/* Target when the mouse is over the dot */
+.nav-dot:hover .nav-dot-inner {
+    height: var(--nav-ctrl-inner-size);
+    opacity: .5;
+    width: var(--nav-ctrl-inner-size);
+}
+
+/* If many CSS elements will appear the same way, seprate the classes with a coma */
+#bnr-1-ctrl:checked ~ .banner-nav #bnr-1-dot .nav-dot-inner, 
+#bnr-2-ctrl:checked ~ .banner-nav #bnr-2-dot .nav-dot-inner,
+#bnr-3-ctrl:checked ~ .banner-nav #bnr-3-dot .nav-dot-inner,
+#bnr-4-ctrl:checked ~ .banner-nav #bnr-4-dot .nav-dot-inner{
+    height: var(--nav-ctrl-inner-size);
+    opacity: 1;
+    width: var(--nav-ctrl-inner-size);
+}
+
+#bnr-1-ctrl:checked ~ .banner-content #banner-1,
+#bnr-2-ctrl:checked ~ .banner-content #banner-2,
+#bnr-3-ctrl:checked ~ .banner-content #banner-3,
+#bnr-4-ctrl:checked ~ .banner-content #banner-4{
+       display: block;
+}
+
+                        /*banner images*/
+
+
+
+/*Image links*/ 
+
+
+
+
+/*Image links*/ 
+
+.rounded-image img{
+    display: block;    /* The Display Block would allow the image to follow the rules we put*/
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* CLASSES */
+.blog-post header{
+    text-align: center;
+    margin-top: 4em;
+}
+
+.blog-post header h5{
+    text-transform:uppercase;
+}
+
+.blog-post header h1 {
+    text-transform: capitalize;
+}
+
+.blog-post .image{
+    margin-top:2em;
+    margin-bottom:2em
+}
+
+
+.info {
+    background-color: black;
+    color: white;
+}
+
+.hero {
+    background-color: rgb(112, 131, 139);
+    color: rgb(153, 208, 254);
+}
+.hero a {
+    color: rgb(153, 208, 254);
+}
+
+.villain {
+    background-color: rgb(25, 25, 25);
+    color: rgb(239, 57, 57);
+}
+.villain a {
+    color: rgb(239, 57, 57);
+}
+
+.goodiecharacterdetails {
+     list-style: none;
+     background-color: rgb(132, 168, 180);
+     color: rgb(0, 28, 55);
+}
+
+.goodiecharacterdetails dl{
+    border: #1c1c1c 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.goodiecharacterdetails dt{
+    border-top: #1c1c1c 1px solid;
+}
+
+.badiecharacterdetails {
+    list-style: none;
+    background-color: rgb(98, 23, 23);
+    color: rgb(43, 0, 0);
+}
+
+.badiecharacterdetails dl {
+    border: #ababab 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.badiecharacterdetails dt{
+    border-top: #1c1c1c 1px solid;
+}
+
+
+
+
+/*Image Gallery*/
+
+
+
+.gallery-nav {
+    display: flex;
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    justify-content: center;
+}
+.gallery-nav .nav-item {
+    margin: 0 .5rem;
+}
+.gallery-nav .nav-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--thumbnail-size);
+    width: var(--thumbnail-size);
+}
+
+.gallery-overlay {
+    background-color: rgba(0, 0, 0.75);
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.2s ease;
+    width: 100%;
+}
+.gallery-close {
+   align-items: center;
+   background-color: #000;
+   border: 1px solid #555;
+   border-radius: 100%;
+   color: #fff;
+   display: flex;
+   font-weight: bold;
+   height: 2rem;
+   justify-content: center;
+   position: absolute;
+   right: -1rem;
+   top: -1rem;
+   width: 2rem;
+}
+.gallery-item {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   left: 50%;
+   justify-content: center;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+.gallery-image {
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/*
+   It is important for all interactive functionalities to go after all the code is complete.
+
+   This will override opacity and pointer-events from the original command (.gallery-overlay).
+*/
+.gallery-overlay:target {
+   opacity: 1;
+   pointer-events: all;
+}
+
+
+/*Image Gallery*/
