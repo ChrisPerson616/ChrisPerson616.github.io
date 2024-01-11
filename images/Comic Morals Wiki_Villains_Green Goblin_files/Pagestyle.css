@@ -28,16 +28,6 @@ footer{
 
 
 
-
-.button {
-    color: #000;
-    border:none;
-    
-}
-
-
-
-
                         /*banner images*/
 
 :root{
@@ -164,7 +154,7 @@ footer{
 }
 
 .villain {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(25, 25, 25);
     color: rgb(239, 57, 57);
 }
 .villain a {
@@ -181,32 +171,26 @@ footer{
     border: #1c1c1c 1px solid;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 .goodiecharacterdetails dt{
     border-top: #1c1c1c 1px solid;
-    color: #d7eef9;
 }
 
 .badiecharacterdetails {
     list-style: none;
     background-color: rgb(98, 23, 23);
-    color: rgb(216, 216, 216);
+    color: rgb(43, 0, 0);
 }
 
 .badiecharacterdetails dl {
     border: #ababab 1px solid;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 .badiecharacterdetails dt{
     border-top: #1c1c1c 1px solid;
-    color: #200032;
 }
 
 
@@ -289,71 +273,3 @@ footer{
 
 
 /*Image Gallery*/
-
-
-
-
-
-/*Contact Us*/
-
-
-
-.contact-form label,
-.contact-form input,
-.contact-form textarea {
-   display: block;
-   width: 100%;
-}
-
-.contact-form label {
-    margin-bottom: 0.5em;
-}
-
-.contact-form input,
-.contact-form textarea {
-    border: 1px solid #1b1b1b;
-    padding: .5em;
-    border-radius: 8px;
-}
-
-.contact-form :invalid{
-    border-color: rgb(80, 171, 250);
-    color: rgb(49, 151, 253);
-}
-
-.contact-form :invalid::placeholder{
-    color: #380009;
-}
-
-.contact-form button{
-    cursor: pointer;
-    width: 100%;
-    font-size: 1.2em;
-    padding: .8em;
-}
-
-.contact-form button.clear{
-    background-color: red;
-}
-
-.contact-form button.clear:hover{
-    background-color: rgb(53, 159, 251);
-}
-
-.contact-details hr {
-    border: none;
-    border-top: 1px solid black;
-    margin: 2em 0;
-}
-
-.contact-details h3 {
-    margin-top: .5em;
-}
-
-.contact-details p {
-    margin: 0.5em;
-}
-
-
-
-/*Contact Us*/
